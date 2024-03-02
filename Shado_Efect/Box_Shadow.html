@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Shadow</title>
+    <style>
+        .main {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .container {
+            width: 230px;
+            height: 240px;
+            margin: 20px;
+            padding: 50px;
+            background-color: rgb(214, 222, 222);
+
+        }
+
+        .box1 {
+            width: 200px;
+            height: 250px;
+            background-color: rgb(243, 238, 238);
+            border: 1px solid gray;
+            box-shadow: 20px 20px black;
+
+
+        }
+
+        .box2 {
+            width: 200px;
+            height: 250px;
+            background-color: rgb(243, 238, 238);
+            border: 1px solid gray;
+            box-shadow: -20px -20px black;
+
+        }
+
+        .box3 {
+            width: 200px;
+            height: 250px;
+            background-color:rgb(243, 238, 238);
+            border: 1px solid gray;
+            box-shadow: 20px 20px 15px black;
+
+        }
+
+        .box4 {
+            width: 200px;
+            height: 250px;
+            background-color:rgb(243, 238, 238);
+            border: 1px solid gray;
+            box-shadow: -20px -20px 15px black;
+
+        }
+        img {
+            width: 200px;
+            height: 200px;
+        }
+
+        .boxA {
+            width: 200px;
+            height: 250px;
+            background-color: rgb(243, 238, 238);
+            border: 1px solid gray;
+            box-shadow:  10px 15px rgb(196, 27, 27) inset;
+
+
+        }
+
+        .boxB {
+            width: 200px;
+            height: 250px;
+            background-color:rgb(243, 238, 238);
+            border: 1px solid gray;
+            box-shadow:inset 10px 15px 10px black;
+
+        }
+
+        .boxC {
+            width: 200px;
+            height: 250px;
+            background-color:rgb(243, 238, 238);
+            border: 1px solid gray;
+            box-shadow: 20px 20px 15px black;
+
+        }
+
+        .boxD {
+            width: 200px;
+            height: 250px;
+            background-color:rgb(243, 238, 238);
+            border: 1px solid gray;
+            box-shadow: -20px -20px 15px black;
+
+        }
+        .img1{
+            width: 190px;
+            height:190px ;
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+
+        
+
+        b {
+            margin: 29px;
+            font-size: 20px;
+            color: rgb(8, 7, 11);
+            text-shadow: 5px 5px  rgb(193, 252, 18);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div>
+            <h3>1.Outset Shadow of possitive value</h3>
+            <div class="container">
+                <div class="box1">
+                    <img src="img.jpg" alt="">
+                    <b>Beautiful Image</b>
+                </div>
+            </div>
+            <h3>2.Outset Shadow of Negative value</h3>
+            <div class="container">
+                <div class="box2">
+                    <img src="img.jpg" alt="">
+                    <b>Beautiful Image</b>
+                </div>
+            </div>
+            <h3>3.Outset Shadow of Possitive value with shadow Effect</h3>
+            <div class="container">
+                <div class="box3">
+                    <img src="img.jpg" alt="">
+                    <b>Beautiful Image</b>
+                </div>
+            </div>
+            <h3>4.Outset Shadow of Neagitive value with shadow Effect</h3>
+            <div class="container">
+                <div class="box4">
+                    <img src="img.jpg" alt="">
+                    <b>Beautiful Image</b>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h3>1.inset Shadow of possitive value</h3>
+            <div class="container">
+                <div class="boxA">
+                    <img src="img.jpg" alt="" class="img1">
+                    <b>Beautiful Image</b>
+                </div>
+            </div>
+            <h3>2.inset Shadow of possitive value</h3>
+            <div class="container">
+                <div class="boxB">
+                    <img src="img.jpg" alt="" class="img1">
+                    <b>Beautiful Image</b>
+                </div>
+            </div>
+            <h3>3.inset Shadow of possitive value</h3>
+            <div class="container">
+                <div class="boxC">
+                    <img src="img.jpg" alt="" class="img1">
+                    <b>Beautiful Image</b>
+                </div>
+            </div>
+            <h3>4. inset Shadow of possitive valuet</h3>
+            <div class="container">
+                <div class="boxD">
+                    <img src="img.jpg" alt="" class="img1">
+                    <b>Beautiful Image</b>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

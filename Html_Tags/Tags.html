@@ -1,0 +1,168 @@
+<b><U>BASIC STRUCTURE OF HTML</U></b><br>
+1. DOCTYPE HTML.<br>
+   • The <!DOCTYPE> declaration represents the document type means this document is an HTML5 document<br>
+     and helps browsers to display web pages correctly.<br>
+   * It must only appear once, at the top of the page (before any HTML tags).<br>
+   * The <!DOCTYPE> declaration is not case sensitive.<br> 
+<!DOCTYPE html> <br>
+2. LANG ATTRIBUTE.<br>
+   this is html tag inside the html tag we declear the lang attribute this attribute is use
+   to define the language type<br>
+<html lang="en"> <br>
+3. HEAD TAG.<br>
+ inside the head tag <br>
+    a. meta tag :- meta tag is used to describe the website.<br>
+       (lern meta tage...)<br>
+    b. title tag<br>
+    c. link external sheet.<br> 
+    <head> <br>
+3. Meta TAG.<br>
+   <meta charset="UTF-8">
+    We know that various character coding are available like ASCCI , UTF-8,UTF-16. UTF-8 is one the popular <br>
+    character coding method .majority  website use this method. And UTF-8 provide multi-lingual support. <br>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge"> <br>
+    this line means when you rander your web-page you use latest rander enginne. <br>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"> <br>
+   name="viewport" this line means wherever your content is display on browser that is your viewport <br>
+   content="width=deice-width" this line means your viewport wedth chage according to the device <br>
+   initial-scale=1.0" this line means you can fix your viewport width initialy. <br> 
+   <meta name="description" content="Learn Full Stack Web Development: Master Course · Master Course on
+    Dynamic Programming · Master Course on Graph Algorithms · Complete Android Development ..."/>
+   A meta description is an HTML element that provides a brief summary of <br>
+   a web page. means which type of contents are avilable in this web page <br>
+ <title>title of the web page</title> <br>
+    this is title of the web page <br>
+ <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+   Add favicon icon infron of title of the web page <br>  
+ <link rel="stylesheet" href="anurag.css" />
+   this is how you include external css file. <br>
+ <script src="anurag.js"></script>
+   this is how you include external javascript file. <br>
+  </head> <br><br>
+  2. BODY TAG.<br>
+  The <body> element defines the document's body, and is a container for all the visible contents,<br>
+  such as headings, paragraphs, images, hyperlinks, tables, lists, etc<br><br>
+  <body>
+
+  <b><U> HTML TAGS</U></b><br> <br>
+   
+    1. heading tag
+  HTML headings are titles or subtitles that you want to display on a webpage.
+•	HTML headings are defined with the <h1> to <h6> tags-->
+    <h1>My First Heading</h1>
+    <h2>My First Heading</h2>
+    <h3>My First Heading</h3>
+    <h4>My First Heading</h4>
+    <h5>My First Heading</h5>
+    <h6>My First Heading</h6>
+
+    2. paragraphs tag
+    <!--The HTML <p> element defines a paragraph.A paragraph always starts on a new 
+line, and browsers automatically add some white space (a margin) before and after a paragraph.-->
+    ex:-1
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas minim
+      dolor impedit natus! Voluptate fuga atque sint. Cum, dignissimos
+      voluptatem?
+    </p>
+    ex:-2
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas minim
+      dolor impedit natus! voluptatem? fuga atque sint. Cum, dignissimos
+      voluptatem?
+    </p>
+
+    3. pre tag
+    <!--The HTML <pre> element defines preformatted text
+The pre tag preserves both spaces and line breaks:-->
+    <pre>
+Lorem ipsum dolor sit
+      amet consectetur
+       adipisicing elit. Voluptas minim
+     dolor impedit natus
+      Voluptate fuga atque sint. Cum, 
+dignissimos voluptatem?</pre>
+
+    4. horizontal ruler TAG.
+    <!-- horizontal tag is used to display a  horizontal line on browser -->
+    <hr />
+    5. SUB AND SUP TAG .<br>
+    The <sup> tag defines superscript text. Superscript text appears half a character above the normal line,<br> 
+    and is sometimes rendered in a smaller font. Superscript text can be used for footnotes, like WWW[1]<br>
+    The <sub> tag defines subscript text. Subscript text appears half a character below the normal line, and<br>
+     is sometimes rendered in a smaller font. Subscript text can be used for chemical formulas, like H2O<br>
+     example<br>
+    10 <sup>2</sup><br>
+    10 log <sub>2</sub><br>
+    <p>This text contains <sub>subscript</sub> text.</p>
+    <p>This text contains <sup>superscript</sup> text.</p><br>
+    
+    6.Anchor tag or link tag.
+    <!--HTML links are hyperlinks.You can click on a link and jump to another document. 
+ A link does not have to be text. A link can be an image or any other HTML element-->
+    <br />
+    <a href="https://www.w3schools.com/" target="_top" title="W3SCHOOL WEB"
+      >Visit W3Schools!</a
+    >
+    <br />
+    <a href="https://www.google.com/" target="_top" title="opn google"
+      >Visit GOOGLE</a
+    ><br />
+    current browser window. To change this, you must specify another target for
+    the link. it is use to open the link document where we want to open<br />
+    The target attribute can have one of the following values:<br />
+
+    _self - Default. Opens the document in the same window/tab as it was
+    clicked<br />
+    _blank - Opens the document in a new window or tab<br />
+    _parent - Opens the document in the parent frame<br />
+    _top - Opens the document in the full body of the window<br />
+    <br />
+    <a href="https://www.w3schools.com/" target="_self" alt="w3school">self</a>
+    <br />
+    <a href="https://www.google.com/" target="_blank">blank</a>
+    <br />
+    <a href="https://www.w3schools.com/" target="_present">present!</a>
+    <br />
+    <a href="https://www.google.com/" target="_top">top</a><br />
+
+    image as a Link <br />
+    To use an image as a link, just put the img tag inside the anchor tag<br />
+    <a href="https://www.google.com/"
+      ><img
+        src="download.jpeg"
+        alt="google"
+        style="width: 40px; height: 50px"
+        title="GOOGLE.COM"
+      /> </a
+    ><br />
+
+    Link to an Email Address<br />
+    Use mailto: inside the href attribute to create a link that opens the user's
+    email program (to let them send a new email)
+    <br />
+    <a href="mailto:someone@example.com">Send email</a> <br />
+
+    Button as a Link<br />
+    To use an HTML button as a link, you have to add some JavaScript code.<br />
+    <button onclick="//www.google.com/">HTML Tutorial</button> <br />
+
+    The title attribute specifies extra information about an element. The
+    information is most often shown as a tooltip text when the mouse moves over the
+    element.<br />
+    <a href="https://www.google.com/" title="Go to google page">open google</a><br>
+    <a href="ImageandLink.html"> image</a>
+  </body>
+</html>
+
+
+<!-- EMATE(Shortcut)
+    * if you want to write multiple heading tags then write h1*6 hit enter.
+    * if you want to write multiple heading tags then write p1*6 hit enter.
+    * resize the paragraph then perss ALT+ Z.
+    * italic tag = em tag
+    * bold tag = strong tag 
+    * ctr+ enter to jump into the new line. 
+    * lorem24 means it provide 24 words paragraph. 
+    
+-->

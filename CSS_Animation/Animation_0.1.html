@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Effect</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+        width:100vw;
+        height:100vh;
+        background-color: aqua;
+        border: 1px solid green;
+      
+    }
+    .Object{
+        width: 200px;
+        height:100px;
+        border: 2px solid black;
+        border-radius: 50%;
+        background-color: blue;
+        margin: 20px;
+        position: absolute;
+
+    /* animation-name properties is used to specify the animation name. */
+        animation-name: Right_Move;
+    /* The animation-duration property defines how long an animation should take to complete. */
+        animation-duration: 5s;
+     /* The animation-delay property specifies how much time to wait befour start the animation */
+        animation-delay: 2s;
+    /* The animation-timing-function property specifies the speed curve of the animation. */
+         animation-timing-function:ease ;/* Specifies an animation with the same speed from start to end */
+         /*animation-timing-function:linear; /*Specifies an animation with slow start then fast then slow end. */
+         /*animation-timing-function: ease-in; /* Specifies an animation with slow start but end fast.  */
+         /*animation-timing-function: ease-out; /* Specifies an animation with the same speed from start to end */
+         /*animation-timing-function: ease-in-out; Specifies an animation with the same speed from start to end */
+    /*The animation-iteration-count property specifies the number of times an animation should run*/ 
+        animation-iteration-count: 5;
+    /* The animation-direction property specifies whether an animation should be played forwards, backwards or in alternate cycles.*/
+        /*animation-duration: normal; /* The animation is played source to dastionation only */
+        /*animation-direction:reverse;  /*The animation is played dastination to source only*/
+         animation-direction:alternate; /*The animation is played source to dastination and dstination to source*/
+        /* animation-direction:alternate-reverse; /*The animation is played dastination to source and source  to destination*/
+        
+         
+    }
+     /* @keyframes define the source  and destination styling means where to start and end you object.   */
+    @keyframes Right_Move{
+        from{ /* inside the from block define initial state of the item */
+         top: 0px;
+         left: 0px;
+        }
+        to{  /* inside the to block define initial state of the item */
+            top: 0px;
+            left: 1100px;
+        }
+    }
+    </style>
+   
+</head>
+<body>
+    <div class="container">
+        <div class="Object">
+
+        </div>
+    </div>
+</body>
+</html>

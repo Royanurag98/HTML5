@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+   #f1{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:burlywood;
+  
+   }
+   .f2{
+    float:left;
+    text-align: center;
+    padding: 16px;
+    
+   }
+   .f2:hover{
+    background-color: black;
+    
+   }
+   .border{
+    border: 1px solid black;
+    width: 60px;
+    border-spacing: collapse;
+   }
+  
+    </style>
+  </head>
+  <body>
+    <!--An ordered list starts with the ol tag. Each list item starts with the li tag.
+The  attribute of the ol tag is type attribute , defines the type of the list item.<br>The
+list items will be marked with numbers by default: type Attribute of orderd list are (1,A,a,I,i)-->
+    <h3>1. ORDERD LIST</h3>
+    <ol type="a" class="border">
+      <li>anurag</li>
+      <li>amaan</li>
+      <li>rahul</li>
+      <li>jjdnxnn</li>
+    </ol>
+    Numbers
+    <ol type="1">
+      <li>anurag</li>
+      <li>amaan</li>
+      <li>rahul</li>
+      <li>jjdnxnn</li>
+    </ol>
+    Uppercase Letter
+    <ol type="A">
+      <li>anurag</li>
+      <li>amaan</li>
+      <li>rahul</li>
+      <li>jjdnxnn</li>
+    </ol>
+    Lowercase Roman Numbers
+    <ol type="i">
+      <li>anurag</li>
+      <li>amaan</li>
+      <li>rahul</li>
+      <li>jjdnxnn</li>
+    </ol>
+    <h2>2. UNORDERD LIST</h2>
+
+    <!-- An unordered list starts with the <ul> tag. Each list item starts with the <li> tag. The list
+     items will be marked with bullets (small black circles) by default:
+    Attribute of orderd list ( circul, square, disk...)-->
+    <ul type="blackcircle">
+      <li>manoj</li>
+      <li>raman</li>
+      <li>sita</li>
+      <li>aman</li>
+    </ul>
+
+    <h2>3. DESCRIPTION LIST</h2>
+    <!--HTML Description Lists 
+HTML also supports description lists. A description list is a list of terms, with a description 
+of each term. The <dl> tag defines the description list, the <dt> tag defines the term (name),
+and the <dd> tag describes each term:-->
+    <dl>
+      <dt>Arnav sharma</dt>
+      <dd>--he is best android devaloper</dd>
+      <dt>mango</dt>
+      <dd>-- mango is very sweet</dd>
+      <dt>coffee</dt>
+      <dd>--coffee is so nice</dd>
+    </dl>
+
+    <!--Control List Counting
+By default, an ordered list will start counting from 1. If you want
+to start counting from a specified number, you can use the start attribute:-->
+    <h2>4. CONTROL LIST COUNTING</h2>
+    <ol start="50">
+        <li>anurag</li>
+        <li>amaan</li>
+        <li>rahul</li>
+        <li>jjdnxnn</li>
+      </ol>
+      <br/>
+
+      <h2>4. NESTING OF LIST</h2>
+      <ol start="5"> 
+        <li>JUCE</li>
+        <li>SWEETS</li>
+      <li>FOOD --
+        <ul>
+          <li>ROTI</li>
+          <li>PULSE</li>
+          <li>RICE</li>
+          <li>VEGETABLE</li>
+        </ul>
+      </li>
+    </ol>
+    <h2>Navigation Menu</h2>
+    <p>we use CSS to style the list horizontally, to create a navigation menu:</p>
+    <ul id="f1">
+      <li class="f2" ><a href="">About</a> </li>
+      <li class="f2"><a href="">Contact</a></li>
+      <li class="f2"> <a href="">News</a></li>
+      <li class="f2"><a href="">Home</a></li>
+    </ul>
+  </body>
+</html>

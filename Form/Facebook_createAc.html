@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-color:rgb(235, 225, 212);
+        }
+        .container{
+            background-color: rgb(243, 235, 224);
+            width: 450px;
+            margin-left:300px;
+            padding: 10px;
+            border: 2px solid grey;
+            box-shadow: 10px;
+        }
+        .head{
+            font-size: 30px;
+            color: #1c1e21;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .para{
+            color: #606770;
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        input[type="text"]
+       {
+            margin:2px;
+            padding: 10px;
+            background-color: #eff2f4;
+            border-radius: 5px;
+        }
+        input[type="email"],
+        input[type="password"]{
+            width: 92%;
+            margin:2px;
+            padding: 10px;
+            background-color: #eff2f4;
+            border-radius: 5px;
+        }
+        
+            
+    .s{
+        width: 32%;
+        padding: 10px;
+        border-radius: 5px;
+    }
+  
+        .di{
+            width:92% ;
+        }
+        .flax{
+            display: flex;
+            justify-content: left;
+        
+        }
+        .g{
+            color: #606770;
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+       .s2{
+            width: 28%;
+            margin-left: 5px;
+            border: 1px solid black;
+            padding: 5px 10px;
+            border-radius: 5px;
+    }
+    button{
+        width: 160px;
+        margin-left: 110px;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: rgb(6, 148, 6);
+        border: none;
+        cursor: pointer;
+    }
+    button:hover{
+        background-color: aqua;
+    }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="head"> Sign Up</h2>
+        <p class="para">it's quick and easy</p>
+        <hr>
+        <p>
+            <input type="text" placeholder="First name">
+            <input type="text" placeholder="Surname"></P>
+       <p>
+        <input type="email" placeholder= "Mobile number or email address"></p>
+        <p>
+        <input type="password" placeholder="New password"> </p>
+        <div>
+            <p class="para">date of birth</p>
+            <div class="di">
+            <select name="date" id="date" class="s">
+                <option value="1" >20</option>
+                <option value="1" >20</option>
+                <option value="1" >20</option>
+            </select>
+            <select name="month" id="month" class="s">
+                <option value="1">January</option>
+                <option value="1">Febuary</option>
+                <option value="1">march</option>
+            </select>
+            <select name="year" id="year" class="s">
+                <option value="1">2023</option>
+                <option value="1">2020</option>
+                <option value="1">2021</option>
+            </select>
+        </div>
+        <p class="g">Gender</p>
+        <div class="flax">
+                
+                <div class="s2" >
+                  Femail <input type="radio" name="abc"></div>
+                <div class="s2" >
+                    Male <input type="radio" name="abc">
+                  </div>
+                  <div class="s2">
+                    Custom <input type="radio" name="abc">
+                    </div>
+            </div>
+
+        <p>
+            People who use our service may have uploaded your contact information to Facebook. Learn more.
+
+By clicking Sign Up, you agree to our Terms, Privacy Policy and Cookies Policy. You may receive SMS notifications from us and can opt out at any time.
+        </p>
+        <button> Sign Up</button>
+    </div>
+</body>
+</html>

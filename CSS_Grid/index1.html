@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS_Grid</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            width: 100vh;
+            height: 100vh;
+        }
+        .container{
+            height: 100%;
+            width: 100%;
+            background-color: greenyellow;
+            padding: 4rem;
+             display:grid; /* display grids properties is use to make a Grid Structure. */
+            /* grid-template-rows: 100px 100px; */
+            grid-template-rows: repeat(2,1fr);
+            /* grid-template-columns: 100px 100px 100px; */
+            grid-template-columns: repeat(3,1fr);
+            row-gap: 1rem;
+            column-gap: 1rem;
+
+            
+
+            
+        }
+        .item{
+            background-color: blue;
+            border: 5px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Item</div>
+        <div class="item">Item</div>
+        <div class="item">Item</div>
+        <div class="item">Item</div>
+        <div class="item">Item</div>
+        <div class="item">Item</div>
+    </div>
+</body>
+</html>

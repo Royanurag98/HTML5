@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: 15px, 30px;
+        font-size: 18px;
+        padding: 8px;
+    }
+    .container{
+        background-color: #f2f2f2;
+        padding: 5px 20px 15px 20px;
+        border: 1px solid lightgray;
+        border-radius: 5px;
+        width: 500px;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="number"],
+    input[type="date"],
+    select, textarea
+    {
+ width: 100%;
+ padding: 12px;
+ border: 2px solid #ccc;
+ border-radius: 5px;
+    }
+    fieldset{
+        background-color: #fff;
+        border: 2px solid #ccc;
+    }
+    .main-hading{
+        text-align: center;
+    }
+    button{
+        background-color: rgb(8, 144, 110);
+        padding: 8px 10px;
+        border: 2px solid #fff;
+        color: white;
+        border-radius: 7px;
+        cursor: pointer;
+        width: 100%;
+    }
+    button:hover{
+        background-color:#4caf84;
+        
+    }
+   </style>
+</head>
+<body>
+  <div class="container">
+    <form action="">
+        <h1 class="main-hading">Payment Form</h1>
+        <hr>
+        <h2>User Information</h2>
+        <p>Name* <input type="text"></p>
+        
+    <p>
+         <fieldset>
+           <legend> Gender</legend>
+            Mail<input type="radio" name="gend">
+            Femail<input type="radio" name="gend">
+        </fieldset>
+    </p>
+
+    <p>
+        Address:
+        <textarea name="msg" id="msd" cols="100" rows="5" placeholder="Enter your Address"></textarea>
+    </p>
+        
+    <p>
+        Email:
+        <input type="email" placeholder="abc@gmail.com">
+    </p>
+    <p>
+        Password:
+        <input type="password">
+    </p>
+
+    <p>
+        pincode:
+        <input type="number" placeholder=" 85-3201">
+    </p>
+        <h1>Payment Information</h1>
+    <p>
+        card Type:
+        <select name="ct" id="ct">
+            <option value="">-- Select Card Type --</option>
+            <option value="visa">Visa</option>
+            <option value="master">Master</option>
+            <option value="rupay">Rupay</option>
+        </select>
+        
+    </p>
+
+    <p>
+        Expiration Date:
+        <input type="date" >
+    </p>
+    <p>
+        CVV
+        <input type="number" placeholder="000">
+    </p>
+        <button>Pay Now</button>
+    </form>
+    </div>
+    
+</body>
+</html>

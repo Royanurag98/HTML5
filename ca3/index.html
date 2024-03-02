@@ -1,0 +1,172 @@
+<!-- // crete a bloag page layout uysing html and css
+//create a blog responsive haeder with a bloag post title with author name, publication date.
+//structure the  content into section with hadding para, image
+//implement a read more button.
+//add a comment section at the end of  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+           body{
+             background-image: url("img.jpg"); /*change background img */
+            background-size: cover; /* use to make full size of background*/
+            max-width:1500px;
+            min-width: 300px;
+        }
+        /* Reset default margin and padding */
+body, ul {
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+/* Basic styling for the navigation bar */
+.navbar {
+    background-color:black;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    opacity: 0.5; /* use to transparent back groung color.*/
+}
+
+.logo {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Change link color on hover */
+.nav-links a:hover {
+    color: #ff9900;
+}
+.container{
+    border: 1px solid red;
+    width: fit-content;
+}
+.product {
+    border: 1px solid black;
+    background-color:white;
+    padding: 30px;
+    margin: 25px;
+    float: left;
+    
+    text-align: center;
+    height:250px;
+    width:150px;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    background-color: none;
+
+}
+.down{
+position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:black;
+  color: white;
+  text-align: center;
+}
+.logo2{
+    height: 60px;
+    width: 100px;
+}
+.secondNav{
+    background-color: black;
+    padding: 10px;
+    background-color:aqua ;
+  
+}
+.second{
+    display: flex;
+    justify-content: center;
+}
+li{
+    margin-left: 50px;
+    
+   
+}
+ a{
+    color: black;
+    text-decoration: none;
+
+}
+.imgchand{
+    width: 100%;
+    height: 200px;
+    float: left;
+}
+.display{
+    float: left;
+    margin: 10px;
+}
+
+
+    </style>
+</head>
+<body>
+    <head>
+            <nav class="navbar">
+                <li>EXPLORE
+                <input type="text"></li>
+                <div class="logo">
+                    <img src="logo3.png" alt="NASA" class="logo2">
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#">News&Event</a></li>
+                    <li><a href="#">Multimedi</a></li>
+                    <li><a href="#">Nassa+</a></li>
+                    
+                </ul>
+            </nav>
+            <div class="secondNav">
+                <ul class="second">
+                    <li><a href="#">Image Gelegy</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Video</a></li>
+                    <li><a href="#">More</a></li>
+                    
+                </ul> 
+            </div>
+        
+        <img src="Chandrayaan-3-new.avif" alt="" class="imgchand">
+        <h3>TODAY</h3>
+            <h1><b><u>Image Of The Day</u></b></h1>
+        <img src="planate.jpg" alt="" style="width: 400px;" class="display">
+            
+    <h2 style="color: #ff9900;">Darkened by the Moon’s Shadow</h2>
+    <p>On October 14, 2023, the Moon aligned with the Sun and Earth to produce an annular solar eclipse. The spectacle bathed millions of Americans in a lunar shadow as the Moon blocked the Sun’s rays. The above image was acquired during the eclipse by NASA’s Earth Polychromatic Imaging Camera imager aboard the Deep Space Climate Observato
+        Earth, third planet from the Sun and the fifth largest planet in the solar system in terms of size and mass. Its single most outstanding feature is that its near-surface environments are the only places in the universe known to harbour life. It is designated by the symbol ♁. Earth’s name in English, the international language of astronomy, derives from Old English and Germanic words for ground and earth, and it is the only name for a planet of the solar system that does not come from Greco-Roman mythology. Earth is part of the "observable universe," the region of space that humans can actually or theoretically observe with the aid of technology. Unlike the observable universe, the universe is possibly infinite.
+
+Examine the observable universe's place within the whole universe
+Examine the observable universe's place within the whole universeSee all videos for this article
+Since the Copernican revolution of the 16th century, at which time the Polish astronomer Nicolaus Copernicus proposed a Sun-centred model of the universe (see heliocentric system), enlightened thinkers have regarded Earth as a planet like the others of the solar system. Concurrent sea voyages provided practical proof that Earth is a globe, just as Galileo’s use of his newly invented telescope in the early 17th century soon showed various other planets to be globes as well. It was only after the dawn of the space age, however, when photographs from rockets and orbiting spacecraft first captured the dramatic curvature of Earth’s horizon, that the conception of Earth as a roughly spherical planet rather than as a flat entity was verified by direct human observation. Humans first witnessed Earth as a complete orb floating in the inky blackness of space in December 1968 when Apollo 8 carried astronauts around the Moon. Robotic space probes on their way to destinations beyond Earth, such as the Galileo and the Near Earth Asteroid Rendezvous (NEAR) spacecraft in the 1990s, also looked back with their cameras to provide other unique portraits of the planet.</p>
+<button> <a href="" > Read More</a></button>
+
+
+    
+</body>
+</html>

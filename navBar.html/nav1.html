@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Navigation Bar</title>
+    <style>
+        body{
+             background-image: url("img.jpg"); /*change background img */
+            background-size: cover; /* use to make full size of background*/
+        }
+        /* Reset default margin and padding */
+body, ul {
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* Basic styling for the navigation bar */
+.navbar {
+    background-color: #111010;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 70px;
+    font-size: larger;
+   
+    /* opacity: 0.5; use to transparent back groung color. */
+}
+
+.logo a {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Change link color on hover */
+.nav-links a:hover {
+    color:white;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.container{
+    border: 1px solid red;
+    width: fit-content;
+}
+.product {
+    border: 1px solid black;
+    background-color:white;
+    padding: 30px;
+    margin: 25px;
+    float: left;
+    
+    text-align: center;
+    height:250px;
+    width:150px;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    background-color: none;
+
+}
+.down{
+position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(15, 15, 15);
+  color: white;
+  text-align: center;
+}
+
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#">Anurag Roy</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Project details</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Recommendations</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

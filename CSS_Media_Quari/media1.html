@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .box1{
+        height: 200px;
+        width: 400px;
+        background-color: blue;
+        border: 3px solid red;
+        margin: 20px;
+      }
+
+      @media(max-width:500px){ /*when screen size is greatr then 500px color is changed. */
+        .box1{
+            background-color: aqua;
+        }
+      }
+      .box2{
+        height: 200px;
+        width: 400px;
+        background-color: rgb(26, 230, 66);
+        border: 3px solid red;
+        margin: 20px;
+      }
+      @media(max-width:500px){ /*when screen size is less then 500px color is changed. */
+        .box2{
+            background-color: rgb(242, 29, 129);
+        }
+      }
+      .box3{
+        height: 200px;
+        width: 400px;
+        background-color: orangered;
+        border: 3px solid red;
+        margin: 20px;
+      }
+      @media(min-width:300px) and (max-width:500px){ /*when screen size is lie between then 300px and 500px  color is changed. */
+        .box3{
+            background-color: rgb(189, 246, 89);
+        }
+      }
+    </style>
+</head>
+<body>
+    <div class="box1"><b>when screen size is greatr then 500px color is changed in equa.</b></div>
+    <div class="box2"><b>when screen size is less then 500px color is changed in pink.</b></div>
+    <div class="box3"><b>when screen size is lie between then 300px and 500px  color is changed in green.</b></div>
+</body>
+</html>

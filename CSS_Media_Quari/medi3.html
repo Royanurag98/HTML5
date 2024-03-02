@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 600px;
+            height: 400px;
+            background-color: rgb(26, 164, 164);
+            border:3px solid black;
+            display: flex;
+            flex-direction:row;
+            
+        }
+        .box1{
+            width: 250px;
+            height: 90px;
+            background-color: azure;
+            margin: 10px;
+        }
+
+            .box2{
+            width: 250px;
+            height: 90px;
+            background-color: azure;
+            margin: 10px;
+
+        }
+        
+        .box3{
+            width:250px;
+            height:180px;
+            
+    
+        }
+        img{
+            width:250px;
+            height:180px;
+            margin-top: 12px; 
+        }
+         @media (min-width:640px){
+            .container{
+                flex-direction:row;
+            }
+        } 
+            @media (max-width:640px){
+            .container{
+                flex-direction:column;
+            }
+
+        } 
+    </style>
+</head>
+<body>
+<div class="container">
+    <div>
+        <div class="box1"> Lorem ipsum dolor sit ametdd consectetur, adipisicing elit. Asperiores recusandae similique maxime, natus esse error, assumenda mole</div>
+        <div class="box2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ratione placeat aut recusandae? Suscipit quod pariatur iusto necessita</div>
+    </div>
+    <div>
+        <div  class="box3"><img src="img.jpg" alt=""></div>
+    </div>
+</div>
+   
+</body>
+</html>

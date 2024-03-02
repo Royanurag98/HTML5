@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS_Position_Static</title>
+    <style>
+/* CSS_Position_Static */
+        .container1 {
+            width:100%;
+            height: 300px;
+            border: 2px solid green;
+            background-color:palevioletred;
+        }
+        img{
+           margin:20px ;
+        }
+        .img1{
+            position: static;
+            top: 100px;
+            bottom: 20px;
+            left: 200px;
+            right: 100px;
+        }
+
+/* CSS_Position_Relative */
+
+        .container2 {
+            width:100%;
+            height: 400px;
+            border: 2px solid green;
+            background-color:yellow;
+        }
+        img{
+           margin:20px ;
+           border: 2px solid green;
+        }
+        .img6{
+            position: relative;
+            top: 100px;
+            left: 200px;
+        }
+
+/* CSS_Position_Absolut */
+        .container3 {
+            position: relative;
+            width:100%;
+            height: 400px;
+            border: 2px solid green;
+            background-color:red;
+        }
+        img{
+           margin:20px ;
+           border: 2px solid green;
+        }
+        .img10{
+            position: absolute;
+            top: 100px;
+            left: 300px;
+            
+        }
+
+/* CSS_Position_fixed */
+        .container4 {
+            position: relative;
+            width:100%;
+            height: 600px;
+            border: 2px solid green;
+            background-color:aqua;
+        }
+        img{
+           margin:20px ;
+           border: 2px solid green;
+        }
+        .img16{
+             position:fixed; 
+             bottom: 100px;
+        }
+
+/* CSS_Position_sticky */
+        .container5 {   
+             position: relative; 
+            width:100%;
+            height: 600px;
+            border: 2px solid green;
+            background-color:gray;
+        }
+        img{
+           margin:20px ;
+           border: 2px solid green;
+        }
+        .img20{
+            position:sticky;
+            top: 50px;
+            left: 200px;
+        }
+
+        .container6 {   
+            
+            width:100%;
+            height: 800px;
+            border: 2px solid green;
+            background-color:gold;
+        }
+
+    </style>
+</head>
+<body>
+  
+    <h1>CSS_Position_Static</h1>
+    <h3>1.position: static :- HTML elements are positioned static by default .Static positioned elements are  not affected by the top, bottom, left, right and Z-Index properties</h3>
+    <div class="container1">
+        <img src="download (2).jpeg" alt="" height="200px" width="200px" class="img1">
+        <img src="download (1).jpeg" alt="" height="200px" width="200px" class="img2">
+        <img src="download (1).jpeg" alt="" height="200px" width="200px" class="img3">
+        <img src="download (2).jpeg" alt="" height="200px" width="200px" class="img4">
+    </div> <br><br>
+
+    <h1>CSS_Position_Realitive</h1>
+    <h3>2.position: relative :- We can positioned any element corresponding to the current window using top, right, bottom and left properties. And these properties determine the final location of positioned elements. and we also observe that when we positioned the element through relative property element is positioned but gap of that element is exist </h3> 
+    <div class="container2">
+        <img src="download (2).jpeg" alt="" height="200px" width="200px" class="img5">
+        <img src="download (1).jpeg" alt="" height="200px" width="200px" class="img6">
+        <img src="download (1).jpeg" alt="" height="200px" width="200px" class="img7">
+        <img src="download (2).jpeg" alt="" height="200px" width="200px" class="img8">
+    </div><br><br>
+
+    <h1>CSS_Position_Absolut</h1>
+    <h3> 3.position: absolute :- The element is positioned relative to its closest positioned ancestor using top, right, bottom and left properties. And these properties determine the final location of positioned elements. and we also observe that when we positioned the element through absolute property. element is positioned and gap of that element is also elemenate  </h3>
+    <div class="container3">
+        <img src="download (2).jpeg" alt="" height="200px" width="200px" class="img9">
+        <img src="download (1).jpeg" alt="" height="200px" width="200px" class="img10">
+        <img src="download (2).jpeg" alt="" height="200px" width="200px" class="img11">
+        <img src="download (1).jpeg" alt="" height="200px" width="200px" class="img12">
+    </div>
+
+    <h1>CSS_Position_Fixed</h1>
+    <h3>4.	position: fixed :- it always stays in the same place even if the page is scrolled. this element is stack till the range of window size. The top, right, bottom, and left properties are used to position the element.</h3>
+    <div class="container4">
+        <img src="download (2).jpeg" alt="" height="200px" width="200px" class="img13">
+        <img src="download (1).jpeg" alt="" height="200px" width="200px" class="img14">
+        <img src="download (2).jpeg" alt="" height="200px" width="200px" class="img15">
+        <img src="download (1).jpeg" alt="" height="200px" width="200px" class="img16">
+    </div>
+
+    <h1>CSS_Position_sticky</h1>
+    <p>5.position: sticky :-it always stays in the same place even if the page is scrolled. . this element is stack till the range of parent container.The top, right, bottom, and left properties are used to position the element.</p>
+    <div class="container5">
+        <img src="download (2).jpeg" alt="" height="200px" width="200px" class="img17">
+        <img src="download (1).jpeg" alt="" height="200px" width="200px" class="img18">
+        <img src="download (2).jpeg" alt="" height="200px" width="200px" class="img19">
+        <img src="download (1).jpeg" alt="" height="200px" width="200px" class="img20">
+    </div>
+    <div class="container6">
+        <img src="" alt="" height="200px" width="200px" class="img17">
+        <img src="" alt="" height="200px" width="200px" class="img18">
+        <img src="" alt="" height="200px" width="200px" class="img19">
+        <img src="" alt="" height="200px" width="200px" class="img21">
+    </div>
+    
+</body>
+</html>
